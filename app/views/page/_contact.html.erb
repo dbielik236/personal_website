@@ -1,11 +1,63 @@
 <div class="d-flex justify-content-center">
-  <div class="card text-bg-dark rounded-0 border-0">
+  <div class="card text-bg-dark rounded-0 border-0" style="height: auto; width: 100%; max-width:50rem;">
     <div class="text-center">
-      <%= image_tag("avocado.jpg", style: 'height: auto; width: 100%; max-width:50rem;')%>
-      <div class="card-img-overlay bg-dark", style="--bs-bg-opacity: .4; height: auto; width: 100%; max-width:50rem;">
-        <h1 class="card-title">Contact me</h1>
-        <p class="card-text">Email: davidbielik@gmail.com</p>
-      </div>
-    </div>
-  </div> 
-</div>
+      
+        <% if current_page?(page_contact_path)%>
+           
+            <%= image_tag("feelin_good.jpg", style: 'height: auto; width: 100%; max-width:50rem;')%>
+            <div class="card-img-overlay bg-dark", style="--bs-bg-opacity: .4; height: auto; width: 100%; max-width:50rem;" >
+              <br>
+              <br>
+            
+              <h1 class="card-title">Contact Me</h1>
+              <p class="card-text">Click on the links below to get in touch with me</p>
+            
+            
+              <div class="card bg-light" style="--bs-bg-opacity: .6">
+                <div class="card-body text-dark">
+                   <h5 class="card-title">Email</h5>
+                     <p class="card-text">davidbielik@gmail.com</p>
+                </div>
+              </div>
+            
+            <br>
+            
+
+              <div class="card bg-light" style="--bs-bg-opacity: .6">
+                <div class="card-body text-dark">
+                  <h5 class="card-title">Github</h5>
+                  <p class="card-text">Link to Github</p>
+                </div>
+              </div>
+            <br>
+            
+
+            
+              <div class="card bg-light" style="--bs-bg-opacity: .6">
+                <div class="card-body text-dark">
+                  <h5 class="card-title">Linkedin</h5>
+                  <p class="card-text">Link to Linkedin Account</p>
+                </div>
+              </div>
+            
+            
+            <br>
+            
+          </div>
+          
+        <% else %>
+          <%= image_tag("avocado.jpg", style: 'height: auto; width: 100%; max-width:50rem;')%>
+          <div class="card-img-overlay bg-dark", style="--bs-bg-opacity: .4; height: auto; width: 100%; max-width:50rem;" >
+            <h1 class="card-title">Contact Me</h1>
+            <p class="card-text">I'd love to hear from you! Click on the icons below and connect with me on Github, Linkedin, or Email.</p>  
+            <%= button_to "See all contact info", page_contact_path, method: :get, class:'btn btn-light' %>
+          </div>
+        <% end %>
+
+        
+        
+
+      
+    </div>  
+  </div>
+</div>  
