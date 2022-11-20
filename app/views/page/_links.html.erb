@@ -6,12 +6,12 @@
         <% if current_page?(page_about_path)%>
           <%= image_tag('banana.jpg', style: 'height: auto; width: 100%; max-width:50rem;')%>
           <div class="card-img-overlay bg-dark", style="--bs-bg-opacity: .4; height: auto; width: 100%; max-width:50rem;"  >
-            <div>  
+            <div class="card-body">  
               <h1 class="card-title">Get in touch</h1>
               <%= link_to "Contact info", page_contact_path, method: :get, class:'btn btn-light' %>
             </div> 
-            <br>
-            <div>
+            
+            <div class="card-body">
               <h1 class="card-title">View my work</h1>
               <%= link_to "Portfolio", page_portfolio_path, method: :get, class:'btn btn-light' %>
             </div> 
@@ -20,12 +20,12 @@
         <% elsif current_page?(page_contact_path) %>
         <%= image_tag('avocado.jpg', style: 'height: auto; width: 100%; max-width:50rem;')%>
           <div class="card-img-overlay bg-dark", style="--bs-bg-opacity: .4; height: auto; width: 100%; max-width:50rem;"  >
-            <div>  
+            <div class="card-body">  
               <h1 class="card-title">Learn more about me</h1>
               <%= link_to "About me", page_about_path, method: :get, class:'btn btn-light' %>
             </div> 
-            <br>
-            <div>
+            
+            <div class="card-body">
               <h1 class="card-title">View my work</h1>
               <%= link_to "Portfolio", page_portfolio_path, method: :get, class:'btn btn-light' %>
             </div> 
@@ -34,12 +34,12 @@
         <% elsif current_page?(page_portfolio_path) %>
           <%= image_tag('orange.jpg', style: 'height: auto; width: 100%; max-width:50rem;')%>
           <div class="card-img-overlay bg-dark", style="--bs-bg-opacity: .4; height: auto; width: 100%; max-width:50rem;"  >
-            <div>  
+            <div class="card-body">  
               <h1 class="card-title">Learn more about me</h1>
               <%= link_to "About me", page_about_path, method: :get, class:'btn btn-light' %>
             </div> 
-            <br>
-            <div>
+            
+            <div class="card-body">
               <h1 class="card-title">Get in touch</h1>
               <%= link_to "Contact me", page_contact_path, method: :get, class:'btn btn-light' %>
             </div> 
