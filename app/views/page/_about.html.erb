@@ -5,14 +5,16 @@
         
         <% if current_page?(page_about_path)%>
           
-          <div class="card bg-light rounded-0 border-0", style="--bs-bg-opacity: .2; height: auto; width: 100%; max-width:50rem;"  >
+          <div class="card bg-info rounded-0 border-0", style="--bs-bg-opacity: .6; height: auto; width: 100%; max-width:50rem;"  >
             <div class="card-body">
             <br>
             <br>
             <h1 class="card-title">About me</h1>
-            <p class="card-text">I've been teaching mathematics for over ten years. I am a returned Peace Corps volunteer. </p>
+            <p class="card-text">Hi, I'm David! My pronouns are he/him. I've been teaching mathematics for over ten years. 
+            I love problem solving! I'm a self-taught programmer/web developer. I love building applications that are simple, functional, and amazing!
+            I live in New England with my wife and two cats. I enjoy crossword puzzles, ice fishing, and music. Click on some of the links below to learn about the things I love!</p>
           
-            
+            <div class="card bg-light mx-auto" style="--bs-bg-opacity: 0; border: none; max-width: 300px;">
                 <div class="card">
                   <div class="card-body text-dark">
                     <h5 class="card-title">Peace Corps - Ecuador</h5>
@@ -49,13 +51,15 @@
                     <p class="card-text">Check out my soundcloud!</p>
                   </div>
                 </div>
+              </div> 
+              <br>
               </div>
           </div>  
         <% else %>
           <%= image_tag('banana.jpg', style: 'height: auto; width: 100%; max-width:50rem;')%>
           <div class="card-img-overlay bg-dark rounded-0 border-0", style="--bs-bg-opacity: .4; height: auto; width: 100%; max-width:50rem;">
             <h1 class="card-title">About me</h1>
-            <p class="card-text">I'm an experienced problem solver and I enjoy programming, mathematics, and creating new things. I currently teach mathematics and live in New England with my wife and two cats.</p>
+            <p class="card-text">I'm an experienced problem solver and I enjoy programming, mathematics, and creating new things.</p>
             <%= button_to "Learn more about me!", page_about_path, method: :get, class:'btn btn-light' %>
           </div>
         <% end %>  
