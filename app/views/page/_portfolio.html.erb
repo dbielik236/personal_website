@@ -15,7 +15,9 @@
                   <div class="card-body text-dark">
                      <h5 class="card-title">"Fakebook" (made with Ruby on Rails)</h5>
                        <p class="card-text">An application replicating Facebook (Devise for user authentication)</p>
-                      
+                        <%= image_tag 'fakebook.png', style: 'height:auto; width:100%; max-width:50rem;' %>
+                        <br>
+                        <br>
                         <div class="d-inline">
                           <a href="https://github.com/dbielik236/fakebook" class="btn btn-secondary">Code</a> 
                         </div>
@@ -34,6 +36,9 @@
                     <h5 class="card-title">Calculator (with JavaScript GUI)</h5>
                     <p class="card-text">Four-function calculator made with Javascript using DOM manipulation</p>
                     
+                      <%= image_tag 'calculator.png', style: 'height:auto; width:50%; border-radius: 5px' %>
+                      <br>
+                        <br>
                     <div class="d-inline">
                       <a href="https://github.com/dbielik236/calculator" class="btn btn-secondary">Code</a> 
                     </div>
@@ -50,7 +55,9 @@
                   <div class="card-body text-dark">
                     <h5 class="card-title">Admin Dashboard (layout only)</h5>
                     <p class="card-text">Layout using Grid in CSS</p>
-                    
+                    <%= image_tag 'dashboard.png', style: 'height:auto; width:100%; max-width:50rem;' %>
+                    <br>
+                    <br>
                     <div class="d-inline">
                       <a href="https://github.com/dbielik236/admin_dashboard" class="btn btn-secondary">Code</a> 
                     </div>
@@ -67,12 +74,14 @@
                   <div class="card-body text-dark">
                     <h5 class="card-title">Landing Page (layout only)</h5>
                     <p class="card-text">Layout using Flexbox in CSS</p>
-                    
+                    <%= image_tag 'landing_page.png', style: 'height:auto; width:100%; max-width:50rem;' %>
+                    <br>
+                    <br>
                     <div class="d-inline">
-                      <a href="https://github.com/dbielik236/admin_dashboard" class="btn btn-secondary">Code</a> 
+                      <a href="https://github.com/dbielik236/landing-page" class="btn btn-secondary">Code</a> 
                     </div>
                     <div class="d-inline">
-                      <a href="https://dbielik236.github.io/admin_dashboard/" class="btn btn-secondary">Preview</a>
+                      <a href="https://dbielik236.github.io/landing-page/" class="btn btn-secondary">Preview</a>
                     </div>
                     
                   </div>
@@ -95,7 +104,7 @@
           <%= image_tag("orange.jpg", style: 'height: auto; width: 100%; max-width:50rem;')%>
           <div class="card-img-overlay bg-dark rounded-0 border-0", style="--bs-bg-opacity: .4; height: auto; width: 100%; max-width:50rem;" >
             <h1 class="card-title">Portfolio</h1>
-            <p class="card-text">Take a look and my deployed applications that I'm very proud of!</p>  
+            <p class="card-text">Take a look at my deployed applications that I'm very proud of!</p>  
             <%= button_to "Show me!", page_portfolio_path, method: :get, class:'btn btn-light' %>
           </div>
         <% end %>
