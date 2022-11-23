@@ -3,20 +3,18 @@
     <div class="text-center">
       
         
-        <% if current_page?(page_about_path)%>
+        <% if current_page?(page_about_path) || current_page?(page_cats_path)%>
           <%= image_tag('banana.jpg', style: 'height: auto; width: 100%; max-width:50rem;')%>
           <div class="card-img-overlay bg-dark rounded-0 border-0", style="--bs-bg-opacity: .4; height: auto; width: 100%; max-width:50rem;"  >
               
               <div class="card-body">  
                 <h5 class="card-title">Get in touch</h5>
-                <%= link_to "Contact info", page_contact_path, method: :get, class:'btn btn-light btn-sm' %>
+                <%= link_to "Contact info", page_contact_path, method: :get, class:'btn btn-light btn-sm shadow-sm' %>
               </div> 
             
-           
-             
               <div class="card-body">
                 <h5 class="card-title">View my work</h5>
-                <%= link_to "Portfolio", page_portfolio_path, method: :get, class:'btn btn-light btn-sm' %>
+                <%= link_to "Portfolio", page_portfolio_path, method: :get, class:'btn btn-light btn-sm shadow-sm' %>
               </div> 
               
           </div>
@@ -26,12 +24,12 @@
           <div class="card-img-overlay bg-dark rounded-0 border-0", style="--bs-bg-opacity: .4; height: auto; width: 100%; max-width:50rem;"  >
             <div class="card-body">  
               <h5 class="card-title">Learn more about me</h5>
-              <%= link_to "About me", page_about_path, method: :get, class:'btn btn-light btn-sm' %>
+              <%= link_to "About me", page_about_path, method: :get, class:'btn btn-light btn-sm shadow-sm' %>
             </div> 
             
             <div class="card-body">
               <h5 class="card-title">View my work</h5>
-              <%= link_to "Portfolio", page_portfolio_path, method: :get, class:'btn btn-light btn-sm' %>
+              <%= link_to "Portfolio", page_portfolio_path, method: :get, class:'btn btn-light btn-sm shadow-sm' %>
             </div> 
           </div>
 
@@ -40,12 +38,12 @@
           <div class="card-img-overlay bg-dark rounded-0 border-0", style="--bs-bg-opacity: .4; height: auto; width: 100%; max-width:50rem;"  >
             <div class="card-body">  
               <h5 class="card-title">Learn more about me</h5>
-              <%= link_to "About me", page_about_path, method: :get, class:'btn btn-light btn-sm' %>
+              <%= link_to "About me", page_about_path, method: :get, class:'btn btn-light btn-sm shadow-sm' %>
             </div> 
             
             <div class="card-body">
               <h5 class="card-title">Get in touch</h5>
-              <%= link_to "Contact me", page_contact_path, method: :get, class:'btn btn-light btn-sm' %>
+              <%= link_to "Contact me", page_contact_path, method: :get, class:'btn btn-light btn-sm shadow-sm' %>
             </div> 
           </div>
         <% end %>  
