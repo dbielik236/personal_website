@@ -3,7 +3,7 @@
     <div class="text-center">
       
         <% if current_page?(page_portfolio_path)%>
-          <div class="card bg-success rounded-0 border-0", style="--bs-bg-opacity: .9; height: auto; width: 100%; max-width:50rem;"  >
+          <div class="card bg-success rounded-0 border-0", style="--bs-bg-opacity: .95; height: auto; width: 100%; max-width:50rem;"  >
             <div class="card-body">
               <br>
               <br>
@@ -18,12 +18,10 @@
                         <%= image_tag 'fakebook.png', style: 'height:auto; width:100%; max-width:50rem;' %>
                         <br>
                         <br>
-                        <div class="d-inline">
-                          <a href="https://github.com/dbielik236/fakebook" class="btn btn-secondary">Code</a> 
-                        </div>
-                        <div class="d-inline">
-                          <a href="https://blooming-temple-89582.herokuapp.com/users/sign_in" class="btn btn-secondary">Preview</a>
-                        </div>
+                        
+                          <a href="https://github.com/dbielik236/fakebook" class="btn btn-secondary" style="border-radius: 20px">Code</a> 
+                          <a href="https://blooming-temple-89582.herokuapp.com/users/sign_in" class="btn btn-secondary" style="border-radius: 20px">Preview</a>
+                        
                       
                   </div>
                 </div>
@@ -40,8 +38,8 @@
                       <br>
                       <br>
                     
-                      <a href="https://github.com/dbielik236/calculator" class="btn btn-secondary">Code</a> 
-                      <a href="https://dbielik236.github.io/calculator/" class="btn btn-secondary">Preview</a>
+                      <a href="https://github.com/dbielik236/calculator" class="btn btn-secondary" style="border-radius: 20px">Code</a> 
+                      <a href="https://dbielik236.github.io/calculator/" class="btn btn-secondary" style="border-radius: 20px">Preview</a>
                     
                     
                   </div>
@@ -57,9 +55,8 @@
                     <br>
                     <br>
                     
-                      <a href="https://github.com/dbielik236/admin_dashboard" class="btn btn-secondary">Code</a> 
-                    
-                      <a href="https://dbielik236.github.io/admin_dashboard/" class="btn btn-secondary">Preview</a>
+                      <a href="https://github.com/dbielik236/admin_dashboard" class="btn btn-secondary" style="border-radius: 20px">Code</a> 
+                      <a href="https://dbielik236.github.io/admin_dashboard/" class="btn btn-secondary" style="border-radius: 20px">Preview</a>
                     
                     
                   </div>
@@ -69,15 +66,15 @@
                 
                 <div class="card bg-light shadow-lg">
                   <div class="card-body text-dark">
-                    <h5 class="card-title">Landing Page (layout only)</h5>
-                    <p class="card-text">Layout using Flexbox in CSS</p>
-                    <%= image_tag 'landing_page.png', style: 'height:auto; width:100%; max-width:50rem;' %>
+                    <h5 class="card-title">Personal Website</h5>
+                    <p class="card-text">A display of my work made with Ruby on Rails</p>
+                    <%= image_tag 'website.png', style: 'height:auto; width:100%; max-width:50rem;' %>
                     <br>
                     <br>
                     
-                      <a href="https://github.com/dbielik236/landing-page" class="btn btn-secondary">Code</a> 
+                      <a href="https://dbielik236.github.io/landing-page/" class="btn btn-secondary" style="border-radius: 20px">Code</a> 
                     
-                      <a href="https://dbielik236.github.io/landing-page/" class="btn btn-secondary">Preview</a>
+                      <a href="https://tranquil-tor-73131.herokuapp.com" class="btn btn-secondary" style="border-radius: 20px">Preview</a>
                     
                     
                   </div>
@@ -92,7 +89,7 @@
                     
                       <h5 class="card-title"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg> View more on GitHub</h5>
                       
-                      <a href="https://github.com/dbielik236" class="btn btn-secondary">Let's see more!</a>
+                      <a href="https://github.com/dbielik236" class="btn btn-secondary" style="border-radius: 20px">Let's see more!</a>
                       
                     
                   </div>
@@ -106,7 +103,7 @@
           <div class="card-img-overlay bg-dark rounded-0 border-0", style="--bs-bg-opacity: .4; height: auto; width: 100%; max-width:50rem;" >
             <h1 class="card-title">Portfolio</h1>
             <p class="card-text">Take a look at my deployed applications that I'm very proud of!</p>  
-            <%= button_to "Show me!", page_portfolio_path, method: :get, class:'btn btn-light shadow-lg' %>
+            <%= button_to "Show me!", page_portfolio_path, method: :get, class:'btn btn-light shadow-lg', style:"border-radius: 20px" %>
           </div>
         <% end %>
 
