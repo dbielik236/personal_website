@@ -7,7 +7,7 @@
           <%= image_tag('banana.jpg', style: 'height: auto; width: 100%; max-width:50rem;')%>
           <div class="card-img-overlay bg-dark rounded-0 border-0", style="--bs-bg-opacity: .4; height: auto; width: 100%; max-width:50rem;"  >
               
-              <div class="card-body">  
+              <div class="card-body" style="padding-top: 0">  
                 <h1 class="card-title">Contact Me</h1>
                 <%= link_to "Get in touch", page_contact_path, method: :get, class:'btn btn-light shadow-sm', style:"border-radius: 20px" %>
               </div> 
@@ -22,7 +22,7 @@
         <% elsif current_page?(page_contact_path) %>
         <%= image_tag('avocado.jpg', style: 'height: auto; width: 100%; max-width:50rem;')%>
           <div class="card-img-overlay bg-dark rounded-0 border-0", style="--bs-bg-opacity: .4; height: auto; width: 100%; max-width:50rem;"  >
-            <div class="card-body">  
+            <div class="card-body" style="padding-top: 0">  
               <h1 class="card-title">About Me</h1>
               <%= link_to "Learn who I am", page_about_path, method: :get, class:'btn btn-light shadow-sm', style:"border-radius: 20px" %>
             </div> 
@@ -36,7 +36,7 @@
         <% elsif current_page?(page_portfolio_path) %>
           <%= image_tag('orange.jpg', style: 'height: auto; width: 100%; max-width:50rem;')%>
           <div class="card-img-overlay bg-dark rounded-0 border-0", style="--bs-bg-opacity: .4; height: auto; width: 100%; max-width:50rem;"  >
-            <div class="card-body">  
+            <div class="card-body" style="padding-top: 0">  
               <h1 class="card-title">About Me</h1>
               <%= link_to "Learn who I am", page_about_path, method: :get, class:'btn btn-light shadow-sm', style:"border-radius: 20px" %>
             </div> 
