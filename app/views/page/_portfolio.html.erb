@@ -3,7 +3,7 @@
     <div class="text-center">
       
         <% if current_page?(page_portfolio_path)%>
-          <div class="card rounded-0 border-0", style="background-color: #FC766AFF; height: auto; width: 100%; max-width:50rem;"  >
+          <div class="card rounded-0 border-0", style="background-color: #9F6B99FF; height: auto; width: 100%; max-width:50rem;"  >
             <div class="card-body">
               <br>
               <br>
@@ -107,7 +107,7 @@
           
         <% else %>
           <%= image_tag("orange.jpg", alt: "clementine oranges on a yellow background", style: 'height: auto; width: 100%; max-width:50rem;')%>
-          <div class="card-img-overlay bg-dark rounded-0 border-0", style="--bs-bg-opacity: .4; height: auto; width: 100%; max-width:50rem;" >
+          <div class="card-img-overlay bg-dark rounded-0 border-0", style="--bs-bg-opacity: .3; height: auto; width: 100%; max-width:50rem;" >
             <h1 class="card-title">Portfolio</h1>
             <p class="card-text">Take a look at some of my deployed applications that I'm very proud of.</p>  
             <%= button_to "View my work", page_portfolio_path, method: :get, class:'btn btn-light shadow-lg', style:"border-radius: 20px" %>
