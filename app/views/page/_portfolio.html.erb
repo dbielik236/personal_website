@@ -9,7 +9,7 @@
               <br>
 
               <h1 class="card-title">Portfolio</h1>
-              <div class="mx-auto", style="max-width: 500px;">
+              <div class="mx-auto", style="max-width: 300px;">
                 <p class="card-text">As a self-taught programmer and web developer, I pride myself on buidling applications
                 that are simple, functional, and appealing. Use the links below to view more.</p>
               </div>
@@ -106,11 +106,16 @@
           </div>
           
         <% else %>
-          <%= image_tag("orange.jpg", alt: "clementine oranges on a yellow background", style: 'height: auto; width: 100%; max-width:50rem;')%>
-          <div class="card-img-overlay bg-dark rounded-0 border-0", style="--bs-bg-opacity: .35; height: auto; width: 100%; max-width:50rem;" >
-            <h1 class="card-title">Portfolio</h1>
-            <p class="card-text">Take a look at some of my deployed applications that I'm very proud of.</p>  
-            <%= button_to "View my work", page_portfolio_path, method: :get, class:'btn btn-light shadow-lg', style:"border-radius: 20px" %>
+          
+
+          <div class="card rounded-0 border-0", style="background-color: #9F6B99FF; height: 14rem; width: 100%; max-width:50rem;"  >
+            <div class="card-body mx-auto">
+              <div style="max-width: 300px;">
+                <h1 class="card-title">Portfolio</h1>
+                <p class="card-text">Take a look at some of my deployed applications that I'm very proud of.</p>  
+                <%= button_to "View my work", page_portfolio_path, method: :get, class:'btn btn-light shadow-lg', style:"border-radius: 20px" %>
+              </div>
+            </div>
           </div>
         <% end %>
 

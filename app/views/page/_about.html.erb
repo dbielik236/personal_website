@@ -2,7 +2,6 @@
   <div class="card text-bg-dark rounded-0 border-0" style="height: auto; width: 100%; max-width:50rem;">
     <div class="text-center">
       
-        
         <% if current_page?(page_about_path)%>
           
           <div class="card rounded-0 border-0", style="background-color: #5B84B1FF; height: auto; width: 100%; max-width:50rem;"  >
@@ -10,10 +9,12 @@
             <br>
             <br>
             <h1 class="card-title">About Me</h1>
-            <div class="mx-auto", style="max-width: 500px;">
-              <p class="card-text">👋 Hi, I'm David (he/him)! I've been teaching high school mathematics for over ten years 
-              and moonlighting as an adjunct professor for the past two years. 
-              Along with my advanced math knowledge, I am skilled in interpersonal communication and problem solving.
+            <div class="mx-auto", style="max-width: 300px;">
+               <p class="card-text">👋 Hi, I'm David (he/him)! I have over a years worth of programming experience, 
+               writing clean code and building robust web applications. 
+              I have a background in mathematics, and I love solving problems! 
+              I am curently an adjunct professor of mathematics as Southern New Hampshire University as 
+              well as a high school mathematics teacher. 
               </p>
             </div>
             <br>
@@ -146,7 +147,7 @@
                 </div>
             </div>  
             <hr>
-            <div class="mx-auto", style="max-width: 500px;">
+            <div class="mx-auto", style="max-width: 300px;">
               <p>When I'm not teaching math or enhancing my programming skills, 
               I can be found enjoying all that New England has to offer. 
               I live in New Hampshire with my wife and two cats and we spend our summers and vacations in Maine.
@@ -204,11 +205,14 @@
               </div>
           </div>  
         <% else %>
-          <%= image_tag('banana.jpg', alt: "Banana on a pink background", style: 'height: auto; width: 100%; max-width:50rem;')%>
-          <div class="card-img-overlay bg-dark rounded-0 border-0", style="--bs-bg-opacity: .35; height: auto; width: 100%; max-width:50rem;">
-            <h1 class="card-title">About Me</h1>
-             <p class="card-text">I'm an experienced problem solver who enjoys programming, mathematics, and creating new things.</p>
-            <%= button_to "Learn who I am", page_about_path, method: :get, class:'btn btn-light shadow-lg', style:'border-radius: 20px;'%>
+          <div class="card rounded-0 border-0", style="background-color: #5B84B1FF; height: 14rem; width: 100%; max-width:50rem;"  >
+            <div class="card-body mx-auto ">
+              <div style="max-width: 300px;">
+                <h1 class="card-title">About Me</h1>
+                <p class="card-text">I'm an experienced problem solver who enjoys creating new things.</p>
+                <%= button_to "Learn who I am", page_about_path, method: :get, class:'btn btn-light shadow-lg', style:'border-radius: 20px;'%>
+              </div>
+            </div>
           </div>
         <% end %>  
 
