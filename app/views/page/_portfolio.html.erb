@@ -5,13 +5,11 @@
         <% if current_page?(page_portfolio_path)%>
           <div class="card rounded-0 border-0", style="background-color: #9F6B99FF; height: auto; width: 100%; max-width:50rem;"  >
             <div class="card-body">
-              <br>
-              <br>
-
               <h1 class="card-title">Portfolio</h1>
-              <div class="mx-auto", style="max-width: 300px;">
-                <p class="card-text">As a self-taught programmer and web developer, I pride myself on buidling applications
-                that are simple, functional, and appealing. Use the links below to view more.</p>
+              <div class="mx-auto", style="max-width: 290px;">
+                <p class="card-text" style="text-align: justify; text-justify: inter-word;">
+                As a self-taught programmer and web developer, I pride myself on buidling applications
+                that are simple, functional, and appealing.</p>
               </div>
               <br>
               <div class="card bg-light mx-auto" style="--bs-bg-opacity: 0; border: none; max-width: 300px;">
@@ -72,7 +70,7 @@
                 <div class="card bg-light shadow-lg" style="--bs-bg-opacity: 0.9; border: none;">
                   <div class="card-body text-dark">
                     <h5 class="card-title">Personal Website</h5>
-                    <p class="card-text">A display of my work made with Ruby on Rails</p>
+                    <p class="card-text">A display of my work made with Ruby on Rails. That's the website you're on right now. Wave hello!</p>
                     <%= image_tag 'website.gif', style: 'height:auto; width:100%; max-width:50rem;' %>
                     <br>
                     <br>
@@ -109,11 +107,11 @@
           
 
           <div class="card rounded-0 border-0", style="background-color: #9F6B99FF; height: 14rem; width: 100%; max-width:50rem;"  >
-            <div class="card-body mx-auto">
+            <div class="card-body mx-auto d-flex align-items-center">
               <div style="max-width: 300px;">
                 <h1 class="card-title">Portfolio</h1>
                 <p class="card-text">Take a look at some of my deployed applications and projects.</p>  
-                <%= button_to "View my work", page_portfolio_path, method: :get, class:'btn btn-light shadow-lg', style:"border-radius: 20px" %>
+                <%= button_to "View my work", page_portfolio_path, method: :get, class:'btn btn-light shadow-lg', style:"border-radius: 20px; margin-bottom: 10px;" %>
               </div>
             </div>
           </div>
