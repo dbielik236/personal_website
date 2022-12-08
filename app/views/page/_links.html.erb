@@ -1,10 +1,10 @@
 <div class="d-flex justify-content-center">
-  <div class="card text-bg-dark rounded-0 border-0" style="height: auto; width: 100%; max-width:50rem;">
+  <div class="card text-bg-dark rounded-0 border-0" style="height: 17rem; width: 100%; max-width:52rem;">
     <div class="text-center">
       
         
         <% if current_page?(page_about_path) || current_page?(page_cats_path)%>
-          <div class="card rounded-0 border-0", style="background-color: #4B878BFF; height: 17rem; width: 100%; max-width:50rem;"  >
+          <div class="card rounded-0 border-0", style="background-color: #4B878BFF; height: 17rem; width: 100%; max-width:52rem;"  >
             <div class="card-body d-flex align-items-center justify-content-center flex-column">
                
                 <h1 class="card-title">Contact Me</h1>
@@ -20,7 +20,7 @@
           
 
         <% elsif current_page?(page_contact_path) %>
-        <div class="card rounded-0 border-0", style="background-color: #5B84B1FF; height: 17rem; width: 100%; max-width:50rem;"  >
+        <div class="card rounded-0 border-0", style="background-color: #5B84B1FF; height: 17rem; width: 100%; max-width:52rem;"  >
           
             <div class="card-body d-flex align-items-center justify-content-center flex-column">
               <h1 class="card-title">About Me</h1>
@@ -32,7 +32,7 @@
         </div>
 
         <% elsif current_page?(page_portfolio_path) %>
-          <div class="card rounded-0 border-0", style="background-color: #5B84B1FF; height: 17rem; width: 100%; max-width:50rem;"  >
+          <div class="card rounded-0 border-0", style="background-color: #5B84B1FF; height: 17rem; width: 100%; max-width:52rem;"  >
             <div class="card-body d-flex align-items-center justify-content-center flex-column">
               <h1 class="card-title">About Me</h1>
               <%= link_to "Learn who I am", page_about_path, method: :get, class:'btn btn-light shadow-lg', style:"border-radius: 20px; margin-bottom: 20px;" %>
