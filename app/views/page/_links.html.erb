@@ -9,9 +9,7 @@
                
                 <h1 class="card-title">Contact Me</h1>
                 <%= link_to "Get in touch", page_contact_path, method: :get, class:'btn btn-light shadow-lg', style:"border-radius: 20px; margin-bottom: 20px;" %>
-              
-              
-              
+
                 <h1 class="card-title">Portfolio</h1>
                 <%= link_to "View my work", page_portfolio_path, method: :get, class:'btn btn-light shadow-lg', style:"border-radius: 20px; margin-bottom: 20px;" %>
               
@@ -20,30 +18,31 @@
           
 
         <% elsif current_page?(page_contact_path) %>
-        <div class="card rounded-0 border-0", style="background-color: #5B84B1FF; height: 17rem; width: 100%; max-width:52rem;"  >
-          
+          <div class="card rounded-0 border-0", style="background-color: #5B84B1FF; height: 17rem; width: 100%; max-width:52rem;"  >
             <div class="card-body d-flex align-items-center justify-content-center flex-column">
+              
               <h1 class="card-title">About Me</h1>
               <%= link_to "Learn who I am", page_about_path, method: :get, class:'btn btn-light shadow-lg', style:"border-radius: 20px; margin-bottom: 20px;" %>
               
               <h1 class="card-title">Portfolio</h1>
               <%= link_to "View my work", page_portfolio_path, method: :get, class:'btn btn-light shadow-lg', style:"border-radius: 20px; margin-bottom: 20px;" %>
+            
             </div> 
-        </div>
+          </div>
 
         <% elsif current_page?(page_portfolio_path) %>
           <div class="card rounded-0 border-0", style="background-color: #5B84B1FF; height: 17rem; width: 100%; max-width:52rem;"  >
             <div class="card-body d-flex align-items-center justify-content-center flex-column">
+              
               <h1 class="card-title">About Me</h1>
               <%= link_to "Learn who I am", page_about_path, method: :get, class:'btn btn-light shadow-lg', style:"border-radius: 20px; margin-bottom: 20px;" %>
             
               <h1 class="card-title">Contact Me</h1>
               <%= link_to "Get in touch", page_contact_path, method: :get, class:'btn btn-light shadow-lg', style:"border-radius: 20px; margin-bottom: 20px;" %>
+            
             </div> 
           </div>
         <% end %>  
-
-      
     </div>
   </div>
 </div>
